@@ -1,0 +1,90 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+body #root {
+  display: flex;
+  justify-content: center;
+}
+body #root .container {
+  width: max(60%, 40em);
+}
+body #root .container .header-container {
+  background: linear-gradient(to right, rgb(103, 34, 128), rgb(166, 38, 211));
+  padding-inline: min(2.5em, 5%);
+  padding-block: max(1.5em, 2%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+body #root .container .header-container .troll-icon {
+  display: flex;
+  align-items: center;
+  gap: min(5%, 2em);
+}
+body #root .container .header-container img {
+  width: max(3em, 20%);
+}
+body #root .container .header-container span {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+body #root .container .meme-container {
+  padding-block: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body #root .container .meme-container .input {
+  display: flex;
+  gap: max(2em, 5%);
+}
+body #root .container .meme-container .input input {
+  border-radius: 8px;
+  height: 4.2em;
+  width: min(18.5em, 450px);
+  padding: 1em;
+  border: 2px solid rgb(213, 212, 216);
+}
+body #root .container .meme-container .input input::-moz-placeholder {
+  color: rgb(179, 179, 182);
+  font-weight: 400;
+}
+body #root .container .meme-container .input input::placeholder {
+  color: rgb(179, 179, 182);
+  font-weight: 400;
+}
+body #root .container .meme-container .input input:focus {
+  border: 1px solid rgb(213, 212, 216);
+  outline: none;
+}
+body #root .container .meme-container button {
+  background: linear-gradient(to right, rgb(103, 34, 128), rgb(166, 38, 211));
+  height: 4.2em;
+  padding: 1em;
+  width: max(37em, 525px);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+body #root .container .meme-container .meme-image {
+  width: min(83.5%, 33em);
+  padding-block: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=styles.css.map */

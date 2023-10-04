@@ -1,0 +1,95 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+    #root {
+        display: flex;
+        justify-content: center;
+
+        .container {
+            width: max(60%, 40em);
+
+            .header-container {
+                background: linear-gradient(to right, rgb(103, 34, 128), rgba(166, 38, 211, 1));
+                padding-inline: min(2.5em, 5%);
+                padding-block: max(1.5em, 2%);
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                .troll-icon {
+                    display: flex;
+                    align-items: center;
+                    gap: min(5%, 2em);
+                }
+                img {
+                    width: max(3em, 20%);
+                }
+                span {
+                    font-size: 1.3em;
+                    font-weight: 500;
+                }
+            }
+
+            .meme-container {
+                padding-block: 3em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+
+                .input {
+                    display: flex;
+                    gap: max(2em, 5%);
+
+                    input {
+                        border-radius: 8px;
+                        height: 4.2em;
+                        width: min(18.5em,450px);
+                        padding: 1em;
+                        border:2px solid rgba(213, 212, 216, 1);
+                        
+                        &::placeholder{
+                            color: rgb(179, 179, 182);
+                            font-weight: 400;
+                        }
+
+                        &:focus{
+                            border: 1px solid rgba(213, 212, 216, 1);;
+                            outline: none;
+                        }
+                    }
+                }
+                button {
+                    background: linear-gradient(to right, rgb(103, 34, 128), rgba(166, 38, 211, 1));
+                    height: 4.2em;
+                    padding: 1em;
+                    width:  max(37em, 525px);
+                    color: white;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5em;
+                }
+               
+                .meme-image{
+                    width: min(83.5%, 33em);
+                    padding-block: 1em;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
